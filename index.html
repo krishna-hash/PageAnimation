@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("h2").addClass("animate__animated animate__rubberBand");
+
+        var wait = setTimeout(() => {
+          $(".heading").addClass("animate__animated animate__bounce");
+        }, 2000);
+        var wait = setTimeout(() => {
+          $(".gliding").addClass("animate__animated animate__fadeInRightBig");
+        }, 2000);
+        var wait = setTimeout(() => {
+          $(".burger").addClass("animate__animated animate__jackInTheBox");
+        }, 3000);
+      });
+    </script>
+    <header>
+      <nav>
+        <h2>Glow bright</h2>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <section>
+          <div class="responsive">
+            <img src="person-with-body-painting-1209843.jpg" alt="responsive" />
+            <div class="shade"></div>
+          </div>
+        </section>
+        <div class="heading">colourfull joy</div>
+        <div class="title">krishna-hash</div>
+      </nav>
+    </header>
+
+    <div class="gliding"></div>
+  </body>
+</html>

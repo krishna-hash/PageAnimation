@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  position: absolute;
+  grid-column: 2/3;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  justify-self: center;
+}
+
+.gliding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightpink;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 1;
+  animation-name: glide;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+}
+
+@keyframes glide {
+  30% {
+    background-color: honeydew;
+  }
+}
+
+section {
+  position: absolute;
+  display: flex;
+  height: 75vh;
+  top: 12vh;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 2fr 1fr 10%;
+}
+h2 {
+  justify-self: center;
+  grid-column: 1/2;
+  text-shadow: 2px 1px 3px;
+}
+.line {
+  width: 30px;
+  height: 6px;
+  background-color: aliceblue;
+  margin: 5px;
+}
+.burger {
+  position: absolute;
+  grid-column: 4/5;
+  cursor: pointer;
+  top: 50%;
+}
+.responsive {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  animation-name: animate;
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+}
+@keyframes animate {
+  0% {
+    height: 0%;
+  }
+
+  50% {
+    height: 80%;
+  }
+  50% {
+    width: 100%;
+  }
+  85% {
+    width: 80%;
+  }
+}
+.responsive img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 8px 8px 8px grey;
+}
+
+.shade {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.heading {
+  position: absolute;
+  top: 60vh;
+  font-size: 33px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-self: end;
+  grid-column: 3/4;
+  color: white;
+  text-shadow: 3px 3px 3px;
+}
+.title {
+  position: absolute;
+  top: 80vh;
+  text-shadow: 2px 1px 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
